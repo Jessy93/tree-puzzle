@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
     <Timer />
     <Puzzle />
   </div>
@@ -20,3 +19,15 @@ export default {
   }
 }
 </script>
+
+<style>
+body {
+  background: linear-gradient(169.68deg,#3f298d 6.91%,#1a0657 20.42%,#1d1b29 38.25%);
+  color: #fff;
+}
+section {
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+</style>

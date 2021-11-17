@@ -1,4 +1,4 @@
-# timer-puzzle
+# tree-puzzle-game
 
 ## Project setup
 ```

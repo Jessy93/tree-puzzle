@@ -53,7 +53,6 @@ export default {
   font-size: 24px;
   line-height: 30px;
   margin: 0 auto 15px;
-  color: inherit;
 }
 .btn {
   border:1px #42b983 solid;
