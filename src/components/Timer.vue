@@ -1,14 +1,19 @@
 <template>
-  <div class="timer">
-    Timer
-    <div>
-      <div class="extra-tags__timer">{{stringTimerCounter}}</div>
-      <div v-if="timer === 0">
-        <div class="btn" @click="startTimer()">Start</div>
+  <div>
+    <div class="timer">
+      <div>
+        Timer
+        <div>
+          <div class="extra-tags__timer">{{stringTimerCounter}}</div>
+          <div v-if="timer === 0">
+            <div class="btn" @click="startTimer()">Start</div>
+          </div>
+          <div v-else>
+            <div class="btn" @click="stopTimer()">Stop</div>
+          </div>
+        </div>
       </div>
-      <div v-else>
-        <div class="btn" @click="stopTimer()">Stop</div>
-      </div>
+      <img class="img-puzzle" src="@/assets/images/extra/tree.png" />
     </div>
   </div>
 </template>
@@ -63,5 +68,15 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.img-puzzle {
+  max-height: 110px;
+  margin-left: 30px;
 }
 </style>
